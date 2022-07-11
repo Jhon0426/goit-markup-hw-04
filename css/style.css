@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: roboto;
+    margin: 0;
+}
+
+/*main start*/
+main {
+    margin: 0 auto; 
+}
+/*main ends*/
+
+/*header starts*/
+#menu {
+    margin: 0 100px;
+}
+
+#menu nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #212121;
+    margin-right: 40px;
+}
+
+#menu a:active {
+    color: #2196F3;
+}
+
+#menu .contacto a {
+    color: #757575;
+}
+
+#menu .logo {
+    font-family: raleway;
+    font-size: 26px;
+    color: #2196F3;
+}
+
+#menu .menu {
+    font-weight: bolder;
+}
+/*headers ends*/
+
+/*main start*/
+
+/*banner start*/
+#banner {
+    background-color: #2F303A;
+    width: 100%;
+    height: 400px;
+}
+
+#banner .titulo {
+    font-family: roboto;
+    font-size: 44px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#banner .button {
+    font-family: roboto;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+}
+/*banner ends*/
+
+/*cualidades starts*/
+#cualidades {
+    margin: 0 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: roboto;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+#cualidades .virtudes {
+    width: 270px;
+}
+
+#cualidades .titulo {
+    text-align: left;
+    color: #212121;
+}
+
+#cualidades .texto {
+    text-align: left;
+    color: #757575;
+    font-size: 14px;
+    font-family: roboto;
+}
+
+#cualidades .texto::first-letter {
+    font-weight: bolder;
+    color: #757575;
+}
+/*cualidades ends*/
+
+/*empresa starts*/
+
+#empresa {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#empresa h2 {
+    font-size: 36px;
+    color: #212121;
+    font-family: roboto;
+    padding-bottom: 25px;
+}
+
+#empresa img {
+    padding: 0 40px;
+    width: 373px;
+    height: 323px;
+}
+/*empresa ends*/
+
+/*equipo starts*/
+#equipo {
+    text-align: center;
+    background-color: #F5F4FA;
+}
+
+#equipo h2 {
+    font-size: 36px;
+    color: #212121;
+    font-family: roboto;
+    padding-top: 80px;
+}
+
+#equipo h3 {
+    color: #212121;
+    font-size: 16px;
+    font-family: roboto;
+}
+
+#equipo p {
+    color: #757575;
+    font-size: 16px;
+    font-family: roboto;
+}
+
+#equipo .colegas {
+    margin: 0 30px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid rgb(10, 10, 10);
+}
+
+#equipo img {
+    width: 270px;
+    height: 260px;
+}
+/*equipo ends*/
+
+/*footer starts*/
+
+#pie-pagina {
+    background-color: #2F303A;
+    margin-top: 30px;
+}
+
+#pie-pagina .contacto a {
+    text-decoration: none;
+    color: #757575;
+}
+
+#pie-pagina .logo a {
+    font-family: raleway;
+    font-size: 26px;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+#pie-pagina .ubicacion p {
+    color: #fff;
+    font-size: 14px;
+    font-family: roboto;
+}
+
+#pie-pagina {
+    height: 252px;
+}
+
+#pie-pagina .final {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-bottom: 60px;
+}
+
+/*footer ends*/
