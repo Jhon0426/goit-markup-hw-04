@@ -15,6 +15,10 @@ main {
 
 /*header starts*/
 #menu {
+    text-align: center;
+}
+
+#menu .contenedor {
     margin: 0 100px;
 }
 
@@ -27,7 +31,6 @@ main {
 #menu a {
     text-decoration: none;
     color: #212121;
-    margin-right: 40px;
 }
 
 #menu a:active {
@@ -38,14 +41,19 @@ main {
     color: #757575;
 }
 
+#menu .contacto .email {
+    margin-right: 40px;
+}
+
 #menu .logo {
     font-family: raleway;
     font-size: 26px;
     color: #2196F3;
 }
 
-#menu .menu {
+#menu .menu a {
     font-weight: bolder;
+    margin-right: 40px;
 }
 /*headers ends*/
 
@@ -81,11 +89,14 @@ main {
 
 /*cualidades starts*/
 #cualidades {
-    margin: 0 100px;
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: roboto;
     font-size: 14px;
+}
+
+#cualidades .contenedor {
+    margin: 0 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -132,11 +143,6 @@ main {
     margin: 0 100px;
 }
 
-#empresa .contenedor {
-    display: flex;
-    justify-content: space-between;
-}
-
 #empresa h2 {
     font-size: 36px;
     color: #212121;
@@ -144,11 +150,34 @@ main {
     padding-bottom: 25px;
 }
 
+#empresa .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+#empresa .contenedor .area {
+    position: relative;
+}
+
 #empresa img {
     padding: 0 0px;
     width: 373px;
     height: 323px;
 }
+
+#empresa .contenedor .area p {
+    font-family: roboto;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    bottom: 4.5px;
+    margin-bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    width: 373px;
+    padding: 27px 0px;
+}
+
 /*empresa ends*/
 
 /*equipo starts*/
