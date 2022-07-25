@@ -28,23 +28,6 @@ main {
     justify-content: space-between;
 }
 
-#menu a {
-    text-decoration: none;
-    color: #212121;
-}
-
-#menu a:active {
-    color: #2196F3;
-}
-
-#menu .contacto a {
-    color: #757575;
-}
-
-#menu .contacto .email {
-    margin-right: 40px;
-}
-
 #menu .logo {
     font-family: raleway;
     font-size: 26px;
@@ -55,6 +38,47 @@ main {
     font-weight: bolder;
     margin-right: 40px;
 }
+
+#menu a {
+    text-decoration: none;
+    color: #212121;
+}
+
+#menu .icon {
+    cursor: pointer;
+}
+
+#menu .icon:hover {
+    background: #2196F3;
+}
+
+#menu a:not(:first-child):hover {
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+}
+
+#menu .contacto .email:hover {
+    color: #2196F3;
+    border-bottom: none;
+}
+
+#menu .contacto .tel:hover {
+    color: #2196F3;
+    border-bottom: none;
+}
+
+#menu .contacto {
+    display: flex;
+}
+
+#menu .contacto a {
+    color: #757575;
+}
+
+#menu .contacto .email {
+    margin-right: 40px;
+}
+
 /*headers ends*/
 
 /*main start*/
@@ -157,6 +181,8 @@ main {
 
 #empresa .contenedor .area {
     position: relative;
+    width: 373px;
+    height: 323px;
 }
 
 #empresa img {
@@ -170,7 +196,7 @@ main {
     font-weight: 700;
     color: #fff;
     position: absolute;
-    bottom: 4.5px;
+    bottom: 0;
     margin-bottom: 0;
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
@@ -222,6 +248,25 @@ main {
     width: 270px;
     height: 260px;
 }
+
+#equipo .contenedor .colegas .icons {
+    margin-top: 16px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+#equipo .contenedor .colegas .icons .icon {
+    padding: 12px;
+}
+
+#equipo .contenedor .colegas .icons .icon:hover * {
+    fill: #fff;
+}
+
+#equipo .contenedor .colegas .icons .icon:hover {
+    background-color: #2196F3;
+}
+
 /*equipo ends*/
 
 /*clients starts*/
@@ -249,15 +294,27 @@ main {
 #clientes .contenedor .clientes {
     width: 170px;
     height: 81px;
-    border: 1px solid #AFB1B8;
+}
+
+#clientes .contenedor .clientes:nth-child(4) >.client *{
+    fill: #AFB1B8 !important;
+}
+
+#clientes .contenedor .clientes:hover > .client * {
+    border: 1px solid #2196f3;
     border-radius: 4px;
+    fill: #2196F3 !important;
 }
 
 #clientes .clientes .client {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 14.09px;
-    padding-bottom: 14.09px;
+    padding: 14.09px 32px;
+    cursor: pointer;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;    
+}
+
+#clientes .clientes .client:hover {
+    border: 1px solid #2196f3;
 }
 
 /*clients ends*/
@@ -267,6 +324,17 @@ main {
 #pie-pagina {
     background-color: #2F303A;
     margin-top: 30px;
+    height: 265px;
+}
+
+#pie-pagina .contenedor {
+    display: flex;
+}
+
+#pie-pagina .contenedor .final {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-bottom: 60px;
 }
 
 #pie-pagina .contacto a {
@@ -285,16 +353,48 @@ main {
     color: #fff;
     font-size: 14px;
     font-family: roboto;
+    line-height: 24px;
 }
 
-#pie-pagina {
-    height: 252px;
+#pie-pagina .contenedor .final .contacto .email {
+    margin-bottom: 9px;
 }
 
-#pie-pagina .final {
+#pie-pagina .contenedor .redes .texto {
+    display: block;
+    font-family: roboto;
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#pie-pagina .contenedor .redes {
     padding-top: 60px;
     padding-left: 100px;
     padding-bottom: 60px;
+}
+
+#pie-pagina .contenedor .redes .icon-flex {
+    display: flex;
+}
+
+#pie-pagina .redes .icons .icon {
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#pie-pagina .redes .icons:not(:last-child) {
+    margin-right: 10px;
+}
+
+#pie-pagina .redes .icons:hover * {
+    background-color: #2196F3;
+}
+
+#pie-pagina .redes .icons:hover > .icon * {
+    fill: #fff;
 }
 
 /*footer ends*/

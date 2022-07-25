@@ -26,6 +26,13 @@ main {
     justify-content: space-between;
 }
 
+#menu .logo {
+    font-family: raleway;
+    font-size: 26px;
+    color: #2196F3;
+    margin-right: 40px;
+}
+
 #menu a {
     text-decoration: none;
     color: #212121;
@@ -35,18 +42,42 @@ main {
     margin-right: 40px;
 }
 
-#menu a:active {
+#menu a:hover {
     color: #2196F3;
+}
+
+#menu .contacto {
+    display: flex;
 }
 
 #menu .contacto a {
     color: #757575;
 }
 
-#menu .logo {
-    font-family: raleway;
-    font-size: 26px;
+#menu .icon {
+    cursor: pointer;
+}
+
+#menu .icon:hover {
+    background: #2196F3;
+}
+
+#menu a:not(:first-child):hover {
     color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+}
+
+#menu .contacto .email:hover {
+    color: #2196F3;
+    border-bottom: none;
+}
+
+#menu .contacto .tel:hover {
+    color: #2196F3;
+    border-bottom: none;
+}
+
+#menu .contacto .email {
     margin-right: 40px;
 }
 
@@ -137,7 +168,17 @@ main {
 #pie-pagina {
     background-color: #2F303A;
     margin-top: 30px;
-    height: 252px;
+    height: 265px;
+}
+
+#pie-pagina .contenedor {
+    display: flex;
+}
+
+#pie-pagina .final {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-bottom: 60px;
 }
 
 #pie-pagina .contacto a {
@@ -159,10 +200,45 @@ main {
     text-align: left;
 }
 
-#pie-pagina .final {
+#pie-pagina .contenedor .final .contacto .email {
+    margin-bottom: 9px;
+}
+
+#pie-pagina .contenedor .texto {
+    display: block;
+    font-family: roboto;
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#pie-pagina .contenedor .redes {
     padding-top: 60px;
     padding-left: 100px;
     padding-bottom: 60px;
+}
+
+#pie-pagina .contenedor .redes .icon-flex {
+    display: flex;
+}
+
+#pie-pagina .redes .icons .icon {
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#pie-pagina .redes .icons:not(:last-child) {
+    margin-right: 10px;
+}
+
+#pie-pagina .redes .icons:hover > * {
+    background: #2196F3;
+}
+
+#pie-pagina .redes .icons .icon:hover * {
+    fill: #fff;
 }
 
 /*Footer*/
